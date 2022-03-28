@@ -45,24 +45,27 @@ export const BastionFooter = () => {
         <img src={ImageBastion} alt='Bastion Illustration' />
       </div>
       <div className='app__input'>
-        <div className='input__bastion'>
+        <div className='input__bastion' style={{ marginBottom: '20px' }}>
           {inputsBastion.map((items,i) => (
             <Input id={items.id} label={items.label} key={i} />
           ))}
           <MainButton id='mintBastion' text='Mint Bastion' color='rgb(225 15 15)' icon={<BsBoxSeam color='rgb(225 15 15)' size={24} />} />
         </div>
+
         <div className='input__bastion'>
           {inputsBanner.map((items,i) => (
             <Input id={items.id} label={items.label} key={i} />
           ))}
           <MainButton id='addBannersBTN' text='Add Banners' icon={<AiOutlineUserAdd color='#ff8e00' size={24} />} />
         </div>
+
         <div className='input__inquisitors'>
           {inputsInquisitors.map((items, i) => (
             <Input id={items.id} label={items.label} key={i} />
           ))}
           <MainButton id='addInquisitorsBTN' text='Add Inquisitors' icon={<AiOutlineUserAdd color='#ff8e00' size={24} />} />
         </div>
+        
         <div className='input__health'>
           <Input id='checkBastionHealthID' label='Token Bastion' />
           <MainButton id='checkBastionHealth' color='#1dcc1b' text='Bastion Health' icon={<MdHealthAndSafety color='#1dcc1b' size={24} />} />
