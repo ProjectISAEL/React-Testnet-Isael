@@ -56,10 +56,10 @@ export const DungeonBastion = [
     idButton: 'healBastion'
   },
   {
-    label: 'Burn Bastion',
-    icon: <AiFillFire color='#f04005' size={24} />,
-    color: '#f04005',
-    idInput: 'tokenIdofBastionToBurn',
-    idButton: 'burnBastion'
+    label: 'Check Bastion Health',
+    icon: <MdHealthAndSafety color='#1dcc1b' size={24} />,
+    color: '#1dcc1b',
+    idInput: 'checkBastionHealth',
+    idButton: 'checkBastionHealthID'
   },
 ]
