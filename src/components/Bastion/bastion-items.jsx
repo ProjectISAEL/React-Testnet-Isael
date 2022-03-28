@@ -16,6 +16,17 @@ const inputsBastion = [
   }
 ]
 
+const inputsBanner = [
+  {
+    id: 'addBanners',
+    label: 'Add Banners',
+  },
+  {
+    id: 'AddBanners',
+    label: 'Token Id',
+  }
+]
+
 const inputsInquisitors = [
   {
     id: 'addInquisitors',
@@ -39,6 +50,12 @@ export const BastionFooter = () => {
             <Input id={items.id} label={items.label} key={i} />
           ))}
           <MainButton id='mintBastion' text='Mint Bastion' color='rgb(225 15 15)' icon={<BsBoxSeam color='rgb(225 15 15)' size={24} />} />
+        </div>
+        <div className='input__bastion'>
+          {inputsBanner.map((items,i) => (
+            <Input id={items.id} label={items.label} key={i} />
+          ))}
+          <MainButton id='addBannersBTN' text='Add Banners' icon={<AiOutlineUserAdd color='#ff8e00' size={24} />} />
         </div>
         <div className='input__inquisitors'>
           {inputsInquisitors.map((items, i) => (
